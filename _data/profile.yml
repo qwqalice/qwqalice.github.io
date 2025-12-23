@@ -30,21 +30,21 @@ short_bio: >-
     as well as being common in domestic longhair and domestic shorthair cats.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/scx.png
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: East China Normal University
+  logo: /assets/images/badges/ECNU.jpg
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    School of Computer Science and Technology  <br/>
+    Master Student
+  date: Sep. 2025 - present
+- name: Hua Zhong Agriculture University
+  logo: /assets/images/badges/HZAU.png
+  position: B.S. in Computer Science and Technology
+  date: Sep. 2021 - Jul. 2025
 
 # experience:
 # - name: Peking University
@@ -53,7 +53,7 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
+- name: 49th International Collegiate Programming Contest Asia
   date: 2024
 - name: Award Name 1 
   date: 2021
