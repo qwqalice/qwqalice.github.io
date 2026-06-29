@@ -3,14 +3,15 @@ secondary_name: "邵晨曦"
 navbar_name: "Shao Chenxi"
 
 positions:
-- name: East China Normal University
-- name: School of Computer Science and Technology 
-  logo: /assets/images/badges/ECNU.jpg  # Logo is optional
+- name: M.S. Student, East China Normal University
+- name: School of Computer Science and Technology
+  logo: /assets/images/badges/ECNU.jpg
+- name: Visual Perception + X (VPX) Group
 
 
 email: "2011848311@qq.com"
 # cv_link: link-to-your-cv-file
-gscholar: D8DscSoAAAAJ  # This is an example, replace it with your own Google Scholar ID
+# gscholar: your-google-scholar-id
 github: qwqalice
 # twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
@@ -22,38 +23,98 @@ github: qwqalice
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am a Master's student at the School of Computer Science and Technology,
+    East China Normal University (ECNU), and a member of the
+    Visual Perception + X (VPX) Group. My current work focuses on video analysis,
+    computer vision, and multimodal learning.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research interests include video content understanding, temporal modeling,
+    multimodal large models, and robust visual recognition under domain shifts.
+    I am also interested in applying visual perception to practical scenarios
+    such as psychological sandplay analysis, industrial inspection, and medical
+    image analysis.
+  </p>
+  <p>
+    Before joining ECNU, I received my B.S. in Computer Science and Technology
+    from Huazhong Agricultural University. I have experience in algorithmic
+    programming competitions and full-stack AI system development.
   </p>
 
-portrait_url: /assets/images/photos/commic.png
+portrait_url: /assets/images/photos/scx-homepage-portrait-square.jpg
 
 education:
 - name: East China Normal University
   logo: /assets/images/badges/ECNU.jpg
   position: >- 
     School of Computer Science and Technology  <br/>
-    Master Student
-  date: Sep. 2025 - present
-- name: HuaZhong Agriculture University
+    M.S. in Computer Science and Technology
+  date: Sep. 2025 - Present
+- name: Huazhong Agricultural University
   logo: /assets/images/badges/HZAU.png
   position: B.S. in Computer Science and Technology
-  date: Sep. 2021 - Jul. 2025
+  date: Sep. 2021 - Jun. 2025
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: MIGU Video Co. Ltd.
+  dept: China Mobile Migu / Video Services
+  position: AI Algorithm Engineer Intern
+  date: Apr. 2026 - Jul. 2026
+  summary: >-
+    Worked on football-oriented AI systems for video understanding, player
+    tracking, and multimodal data pipelines.
+  details:
+  - >-
+    Designed and documented a streaming soccer video understanding pipeline,
+    including event-boundary modeling, short-term event memory, memory-to-caption
+    stages, and causal evidence-grounded commentary data requirements.
+  - >-
+    Built football player tracking and ReID data workflows that convert match
+    videos into tracklets, player crops, pair manifests, OCR-assisted jersey
+    number signals, and weakly supervised identity-training data.
+  - >-
+    Explored long-term player identity baselines with frozen visual embeddings,
+    tracklet-level graph association, team constraints, jersey cues, and
+    cross-camera / re-entry analysis.
+  - >-
+    Organized football player image assets and match-preview metadata pipelines,
+    covering roster normalization, face/body/jersey screening rules, sourced
+    evidence collection, and structured preview generation.
+
+projects:
+- title: Intelligent Sandplay for Psychological Assessment
+  role: Video Analysis and System Development
+  date: Sep. 2025 - Dec. 2025
+  description: >-
+    Worked on an AI-assisted sandplay analysis system involving object
+    detection, multi-object tracking, and visualization for long-sequence
+    scene understanding.
+- title: Multi-type Meter Visual Recognition and Automated Billing System
+  role: Algorithm and Full-stack Development
+  date: Mar. 2025 - Dec. 2025
+  description: >-
+    Built components for an industrial meter-reading workflow, combining visual
+    localization and OCR with backend and mini-program interfaces for task
+    management and billing reports.
+- title: Research on Pulmonary Nodule Detection and Segmentation based on CT Images
+  role: Research Participant
+  date: Hubei Provincial Undergraduate Training Program
+  description: >-
+    Worked on CT image preprocessing and segmentation experiments based on
+    NestedU-Net and UNet-style models using the LIDC-IDRI dataset.
 
 awards:
-- name: 49th International Collegiate Programming Contest Asia Shen Yang Regional Contest Bronze Award
-  date: 2024.11
+- name: National Scholarship for Undergraduate Students
+  date: 2022
 - name: CCF Elite Collegiate Award
-  date: 2024.10
-- name: China Collegiate Programming Contest Shan Dong Invitational Contest Sliver Award
-  date: 2024.5
+  date: 2024
+- name: Bronze Medal, 49th International Collegiate Programming Contest Asia Shenyang Regional Contest
+  date: Nov. 2024
+- name: Silver Award, China Collegiate Programming Contest National Invitational Contest (Zhengzhou)
+  date: May 2024
+- name: Silver Award, China Collegiate Programming Contest National Invitational Contest (Shandong)
+  date: May 2024
+- name: Second Prize, 15th Lanqiao Cup National Final (C/C++ Group A)
+  date: Jun. 2024
+- name: Second Prize, Group Programming Ladder Tournament National Final
+  date: 2024

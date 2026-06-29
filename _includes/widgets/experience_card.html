@@ -10,7 +10,11 @@
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.education %}
                                 <li class="media mb-1">
+                                    {% if item.logo %}
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% else %}
+                                    <i class="fas fa-graduation-cap mr-1 mt-1 text-muted" style="width: 18px;"></i>
+                                    {% endif %}
                                     <div class="media-body">
                                         <div>{{ item.name }}</div>
                                         <div class="small">{{ item.dept }}</div>
@@ -33,7 +37,11 @@
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media mb-1">
+                                    {% if item.logo %}
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% else %}
+                                    <i class="fas fa-building mr-1 mt-1 text-muted" style="width: 18px;"></i>
+                                    {% endif %}
                                     <div class="media-body">
                                         <div>{{ item.name }}</div>
                                         <div class="small">{{ item.dept }}</div>
@@ -41,6 +49,21 @@
                                             <div>{{ item.position }}</div>
                                             <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
+                                        {% if item.summary %}
+                                        <div class="small text-muted mt-1">{{ item.summary }}</div>
+                                        {% endif %}
+                                        {% if item.details %}
+                                        <a class="small" data-toggle="collapse" href="#experience-detail-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="experience-detail-{{ forloop.index }}">
+                                            Details
+                                        </a>
+                                        <div class="collapse mt-1" id="experience-detail-{{ forloop.index }}">
+                                            <ul class="small pl-3 mb-0">
+                                                {% for detail in item.details %}
+                                                <li>{{ detail }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        {% endif %}
                                     </div>
                                 </li>
                                 {% endfor %}

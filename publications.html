@@ -10,6 +10,13 @@ body_attr: >-
 
 <div class="row">
     <div class="col-12 col-lg-10">
+        {% if site.publications.size == 0 %}
+        <div class="my-3 bg-white shadow-sm rounded-xl">
+            <div class="p-4 text-muted">
+                Publications will be updated soon.
+            </div>
+        </div>
+        {% endif %}
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
