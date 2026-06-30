@@ -90,3 +90,56 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+.experience-detail-button {
+    line-height: 1.2;
+}
+
+.experience-modal .modal-body {
+    line-height: 1.55;
+}
+
+.awards-list .award-row {
+    border-top: 1px solid #e9ecef;
+}
+
+.awards-list .award-row:first-child {
+    border-top: 0;
+}
+
+.award-main {
+    min-width: 0;
+}
+
+.award-date {
+    flex-shrink: 0;
+}
+
+.news-year {
+    min-width: 3.2rem;
+}
+
+.news-item > div:first-child {
+    min-width: 0;
+    padding-right: 1rem;
+}
+
+.news-year-group + .news-year-group {
+    border-top: 2px solid #dee2e6;
+}
+
+.news-item + .news-item {
+    border-top: 1px solid #e9ecef;
+}
+
+@media (max-width: 575.98px) {
+    .award-row,
+    .news-item {
+        flex-direction: column;
+    }
+
+    .award-date,
+    .news-item .ml-auto {
+        margin-left: 0 !important;
+    }
+}
+

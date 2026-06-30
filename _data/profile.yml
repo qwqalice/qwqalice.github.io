@@ -56,30 +56,31 @@ education:
   date: Sep. 2021 - Jun. 2025
 
 experience:
-- name: MIGU Video Co. Ltd.
-  dept: China Mobile Migu / Video Services
+- name: MIGU Video Co., Ltd.
+  dept: China Mobile Migu / Migu Video
   position: AI Algorithm Engineer Intern
   date: Apr. 2026 - Jul. 2026
   summary: >-
-    Worked on football-oriented AI systems for video understanding, player
-    tracking, and multimodal data pipelines.
+    Contributed to football AI viewing features for China Mobile Migu's World
+    Cup AI Zone, focusing on video understanding, player-aware visual signals,
+    and evidence-grounded match commentary pipelines.
   details:
   - >-
-    Designed and documented a streaming soccer video understanding pipeline,
-    including event-boundary modeling, short-term event memory, memory-to-caption
-    stages, and causal evidence-grounded commentary data requirements.
+    Supported AI Zone-oriented football video understanding by mapping raw match
+    streams into structured event records for tactical visualization,
+    intelligent commentary, highlight review, and viewer-facing Q&A scenarios.
+  - >-
+    Designed a streaming soccer understanding prototype covering semantic event
+    boundaries, short-term event memory, memory-to-factual-caption conversion,
+    and evidence-grounded live commentary data construction.
   - >-
     Built football player tracking and ReID data workflows that convert match
-    videos into tracklets, player crops, pair manifests, OCR-assisted jersey
-    number signals, and weakly supervised identity-training data.
+    videos into tracklets, player crops, team labels, OCR-assisted jersey-number
+    cues, weak pair labels, and global identity annotations.
   - >-
-    Explored long-term player identity baselines with frozen visual embeddings,
-    tracklet-level graph association, team constraints, jersey cues, and
-    cross-camera / re-entry analysis.
-  - >-
-    Organized football player image assets and match-preview metadata pipelines,
-    covering roster normalization, face/body/jersey screening rules, sourced
-    evidence collection, and structured preview generation.
+    Organized player and match-preview assets, including roster normalization,
+    face/body/jersey image screening, source-backed static metadata, and data
+    quality rules for player-aware viewing features.
 
 projects:
 - title: Intelligent Sandplay for Psychological Assessment
@@ -108,13 +109,18 @@ awards:
   date: 2022
 - name: CCF Elite Collegiate Award
   date: 2024
-- name: Bronze Medal, 49th International Collegiate Programming Contest Asia Shenyang Regional Contest
+- name: 49th International Collegiate Programming Contest Asia Shenyang Regional Contest
+  award: Bronze Medal
   date: Nov. 2024
-- name: Silver Award, China Collegiate Programming Contest National Invitational Contest (Zhengzhou)
+- name: China Collegiate Programming Contest National Invitational Contest (Zhengzhou)
+  award: Silver Award
   date: May 2024
-- name: Silver Award, China Collegiate Programming Contest National Invitational Contest (Shandong)
+- name: China Collegiate Programming Contest National Invitational Contest (Shandong)
+  award: Silver Award
   date: May 2024
-- name: Second Prize, 15th Lanqiao Cup National Final (C/C++ Group A)
+- name: 15th Lanqiao Cup National Final (C/C++ Group A)
+  award: Second Prize
   date: Jun. 2024
-- name: Second Prize, Group Programming Ladder Tournament National Final
+- name: Group Programming Ladder Tournament National Final
+  award: Second Prize
   date: 2024

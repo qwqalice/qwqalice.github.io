@@ -2,7 +2,7 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="row">
                     {% if site.data.profile.education %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
@@ -53,35 +53,41 @@
                                         <div class="small text-muted mt-1">{{ item.summary }}</div>
                                         {% endif %}
                                         {% if item.details %}
-                                        <a class="small" data-toggle="collapse" href="#experience-detail-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="experience-detail-{{ forloop.index }}">
+                                        {% assign modal_id = "experience-modal-" | append: forloop.index %}
+                                        <button type="button" class="btn btn-link btn-sm p-0 small experience-detail-button" data-toggle="modal" data-target="#{{ modal_id }}">
                                             Details
-                                        </a>
-                                        <div class="collapse mt-1" id="experience-detail-{{ forloop.index }}">
-                                            <ul class="small pl-3 mb-0">
-                                                {% for detail in item.details %}
-                                                <li>{{ detail }}</li>
-                                                {% endfor %}
-                                            </ul>
+                                        </button>
+                                        <div class="modal fade experience-modal" id="{{ modal_id }}" tabindex="-1" role="dialog" aria-labelledby="{{ modal_id }}-title" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content border-0 shadow">
+                                                    <div class="modal-header">
+                                                        <div>
+                                                            <h5 class="modal-title" id="{{ modal_id }}-title">{{ item.name }}</h5>
+                                                            <div class="small text-muted">
+                                                                {{ item.position }}{% if item.date %} &middot; {{ item.date }}{% endif %}
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        {% if item.dept %}
+                                                        <div class="small text-muted mb-2">{{ item.dept }}</div>
+                                                        {% endif %}
+                                                        {% if item.summary %}
+                                                        <p>{{ item.summary }}</p>
+                                                        {% endif %}
+                                                        <ul class="mb-0 pl-3">
+                                                            {% for detail in item.details %}
+                                                            <li class="mb-2">{{ detail }}</li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         {% endif %}
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
-
-                    {% if site.data.profile.awards %}
-                    <div class="col-lg-6">
-                        <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
-                            <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
-                                <li>
-                                    <div class="d-flex">
-                                        <div>{{ item.name }}</div>
-                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
                                     </div>
                                 </li>
                                 {% endfor %}
