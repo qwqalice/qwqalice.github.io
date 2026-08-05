@@ -61,26 +61,34 @@ experience:
   position: AI Algorithm Engineer Intern
   date: Apr. 2026 - Jul. 2026
   summary: >-
-    Contributed to football AI viewing features for China Mobile Migu's World
-    Cup AI Zone, focusing on video understanding, player-aware visual signals,
-    and evidence-grounded match commentary pipelines.
+    Contributed to China Mobile Migu's World Cup AI Zone, focusing on live
+    football video understanding, player perception and identity recognition,
+    and intelligent commentary generation.
   details:
   - >-
-    Supported AI Zone-oriented football video understanding by mapping raw match
-    streams into structured event records for tactical visualization,
-    intelligent commentary, highlight review, and viewer-facing Q&A scenarios.
+    Designed and implemented a streaming video caption system (StreamSoccer)
+    for live football broadcasts, converting real-time match footage into
+    structured semantic event records and natural language descriptions for
+    downstream commentary and Q&A. The system adopts a three-stage streaming
+    architecture based on Qwen3-VL: short-term event memory learning,
+    memory-to-factual-caption conversion, and evidence-grounded live commentary
+    generation. This work has been submitted as a research paper.
   - >-
-    Designed a streaming soccer understanding prototype covering semantic event
-    boundaries, short-term event memory, memory-to-factual-caption conversion,
-    and evidence-grounded live commentary data construction.
+    Built a player tracking and re-identification system (SoccerTracker) for
+    real-world football broadcasts, addressing global identity association
+    across long camera cuts and player re-entry. Integrated SRITrack online
+    tracker with DINOv3 feature extraction and OCR-assisted jersey number
+    recognition, and designed a global identity graph optimization scheme
+    combining ReID similarity, team consistency, jersey number, and temporal
+    constraints.
   - >-
-    Built football player tracking and ReID data workflows that convert match
-    videos into tracklets, player crops, team labels, OCR-assisted jersey-number
-    cues, weak pair labels, and global identity annotations.
-  - >-
-    Organized player and match-preview assets, including roster normalization,
-    face/body/jersey image screening, source-backed static metadata, and data
-    quality rules for player-aware viewing features.
+    Developed an end-to-end close-up player identification and personalized
+    commentary system. For identification, built a face-body-jersey three-modal
+    fusion framework using ArcFace embeddings and FAISS vector retrieval with
+    a Qwen3-VL-Reranker for final adjudication, supporting unknown/ambiguous
+    rejection. For commentary, collected online player data, distilled the
+    commentary style of top football content creators, and fine-tuned
+    Qwen 3.5 4B for personalized commentary generation.
 
 projects:
 - title: Intelligent Sandplay for Psychological Assessment
