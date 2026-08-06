@@ -45,6 +45,7 @@ short_bio: >-
   </p>
 
 portrait_url: /assets/images/photos/scx-homepage-portrait-square.jpg
+portrait_caption: Shao Chenxi
 
 education:
 - name: East China Normal University
@@ -94,6 +95,17 @@ experience:
     Qwen 3.5 4B for personalized commentary generation.
 
 projects:
+- title: MentorForge — Research Mentor Distillation for AI Agents
+  role: Open-source Project (13 ★)
+  date: Jul. 2026
+  description: >-
+    An open-source Codex Skill that distills a scholar's publications, homepage,
+    and academic trajectory into a runnable research operating system for AI
+    agents. Rather than mimicking how a mentor talks, it captures how a mentor
+    makes research judgments — what problems are worth doing, what experiments
+    are convincing, and the methodology across research directions.
+    Multi-source publication collection, full-text extraction, cross-paper
+    synthesis, with evidence-grounded verification.
 - title: Intelligent Sandplay for Psychological Assessment
   role: Video Analysis and System Development
   date: Sep. 2025 - Dec. 2025
