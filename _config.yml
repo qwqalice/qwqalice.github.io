@@ -13,6 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+title: Shao Chenxi (邵晨曦)
+email: 2011848311@qq.com
+description: Personal academic homepage of Shao Chenxi — M.S. student at ECNU, working on video analysis, computer vision, and multimodal learning.
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 # Build settings
@@ -32,7 +35,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 collections:
   - publications

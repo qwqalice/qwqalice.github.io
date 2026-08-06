@@ -11,34 +11,37 @@ positions:
 
 email: "2011848311@qq.com"
 # cv_link: link-to-your-cv-file
-# gscholar: your-google-scholar-id
+gscholar: D8DscSoAAAAJ
 github: qwqalice
 # twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 # linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+orcid: 0009-0008-9688-5291
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
     I am a Master's student at the School of Computer Science and Technology,
-    East China Normal University (ECNU), and a member of the
-    Visual Perception + X (VPX) Group. My current work focuses on video analysis,
-    computer vision, and multimodal learning.
-  </p>
-  <p>
-    My research interests include video content understanding, temporal modeling,
-    multimodal large models, and robust visual recognition under domain shifts.
-    I am also interested in applying visual perception to practical scenarios
-    such as psychological sandplay analysis, industrial inspection, and medical
-    image analysis.
+    East China Normal University (ECNU), supervised by Prof. Changbo Wang and
+    Assoc. Prof. Yang Li. My research interests include video content
+    understanding, multimodal large models, vision foundation models, and
+    computer vision. Currently, my work focuses on streaming video understanding,
+    memory management mechanisms in vision-language models, and multi-task
+    training for vision-language models.
   </p>
   <p>
     Before joining ECNU, I received my B.S. in Computer Science and Technology
-    from Huazhong Agricultural University. I have experience in algorithmic
-    programming competitions and full-stack AI system development.
+    from Huazhong Agricultural University. During my undergraduate years, I was
+    an active competitive programmer and won awards in multiple national
+    programming contests. In addition, I have full-stack AI system development
+    experience spanning from prototype to deployment, applying computer vision
+    to real-world scenarios such as psychological assessment and industrial
+    systems.
+  </p>
+  <p>
+    If you are interested in my work, feel free to reach out via email!
   </p>
 
 portrait_url: /assets/images/photos/scx-homepage-portrait-square.jpg
