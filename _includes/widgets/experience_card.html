@@ -78,9 +78,16 @@
                                                         {% if item.summary %}
                                                         <p>{{ item.summary }}</p>
                                                         {% endif %}
-                                                        <ul class="mb-0 pl-3">
+                                                        <ul class="experience-detail-list mb-0">
                                                             {% for detail in item.details %}
-                                                            <li class="mb-2">{{ detail }}</li>
+                                                            {% if detail.title %}
+                                                            <li class="experience-detail-item">
+                                                                <h6 class="experience-detail-title">{{ detail.title }}</h6>
+                                                                <p class="experience-detail-description">{{ detail.description }}</p>
+                                                            </li>
+                                                            {% else %}
+                                                            <li class="experience-detail-item">{{ detail }}</li>
+                                                            {% endif %}
                                                             {% endfor %}
                                                         </ul>
                                                     </div>

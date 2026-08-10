@@ -65,34 +65,45 @@ experience:
   position: AI Algorithm Engineer Intern
   date: Apr. 2026 - Jul. 2026
   summary: >-
-    Contributed to China Mobile Migu's World Cup AI Zone, focusing on live
-    football video understanding, player perception and identity recognition,
-    and intelligent commentary generation.
+    Developed AI capabilities for football live streams, spanning video
+    captioning, streaming commentary, player tracking, and close-up identity
+    recognition.
   details:
-  - >-
-    Designed and implemented a streaming video caption system (StreamSoccer)
-    for live football broadcasts, converting real-time match footage into
-    structured semantic event records and natural language descriptions for
-    downstream commentary and Q&A. The system adopts a three-stage streaming
-    architecture based on Qwen3-VL: short-term event memory learning,
-    memory-to-factual-caption conversion, and evidence-grounded live commentary
-    generation. This work has been submitted as a research paper.
-  - >-
-    Built a player tracking and re-identification system (SoccerTracker) for
-    real-world football broadcasts, addressing global identity association
-    across long camera cuts and player re-entry. Integrated SRITrack online
-    tracker with DINOv3 feature extraction and OCR-assisted jersey number
-    recognition, and designed a global identity graph optimization scheme
-    combining ReID similarity, team consistency, jersey number, and temporal
-    constraints.
-  - >-
-    Developed an end-to-end close-up player identification and personalized
-    commentary system. For identification, built a face-body-jersey three-modal
-    fusion framework using ArcFace embeddings and FAISS vector retrieval with
-    a Qwen3-VL-Reranker for final adjudication, supporting unknown/ambiguous
-    rejection. For commentary, collected online player data, distilled the
-    commentary style of top football content creators, and fine-tuned
-    Qwen 3.5 4B for personalized commentary generation.
+  - title: Live Football Video Captioning for AI Zone
+    description: >-
+      Built a video captioning system for football live streams that converts
+      continuous match footage into timestamped, structured event records with
+      event types, actions, and factual descriptions. As a core capability of
+      the World Cup AI Zone, it provides real-time, retrievable semantic
+      evidence for downstream intelligent commentary and viewer-facing Q&A.
+  - title: StreamSoccer Streaming Football Commentary
+    description: >-
+      Developed StreamSoccer, an end-to-end streaming football commentary
+      system. It continuously integrates live video clips through event memory,
+      generates factual event descriptions when an event closes, and writes
+      retrievable historical records. The system supports event-level,
+      recent-window, and long-term-memory commentary under strict causal
+      constraints, with an online scheduler deciding when to comment or remain
+      silent.
+  - title: Player Tracking and Re-Identification System
+    description: >-
+      Developed a player tracking and re-identification system for football
+      broadcasts. To handle camera cuts, occlusion, long absences, and local
+      track-ID resets, it combines multi-object tracking, ReID representations,
+      jersey-number OCR, team information, and temporal mutual-exclusion
+      constraints to associate short tracklets into more stable match-level
+      player identities. The system also supports global identity association,
+      result export, and visualization.
+  - title: Close-Up Player Identification and Personalized Commentary
+    description: >-
+      Built an end-to-end close-up player identification and personalized
+      commentary system. A later iteration used ArcFace to encode facial
+      features and built a player face database for identity matching. Public
+      football information from sources such as Dongqiudi, commentary-style
+      distillation from leading football content creators, and a large
+      commentary corpus were used to fine-tune Qwen 3.5 4B, enabling the full
+      pipeline from close-up identity recognition to player-information
+      retrieval and personalized commentary generation.
 
 projects:
 - title: MentorForge — Research Mentor Distillation for AI Agents

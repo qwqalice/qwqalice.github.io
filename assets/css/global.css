@@ -98,6 +98,27 @@ div.lazy {
     line-height: 1.55;
 }
 
+.experience-detail-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-detail-item + .experience-detail-item {
+    border-top: 1px solid #e9ecef;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.experience-detail-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.experience-detail-description {
+    color: #4d555d;
+    margin-bottom: 0;
+}
+
 .awards-list .award-row {
     border-top: 1px solid #e9ecef;
 }
