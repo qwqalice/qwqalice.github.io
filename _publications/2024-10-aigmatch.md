@@ -9,6 +9,7 @@ authors:
 date: 2024-10-16
 pub: arXiv preprint
 pub_date: Oct. 2024
+cover: /assets/images/publications/mind-the-context-first-page.png
 abstract: >-
   Medical image segmentation relies on high-quality annotated data that is often difficult and costly to obtain. 
   To address this, we propose an Attention-Guided weak-to-Strong Consistency Match (AIGCMatch) framework 
